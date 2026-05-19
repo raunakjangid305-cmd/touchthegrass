@@ -1,26 +1,27 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-family-sans: 'Chakra Petch', sans-serif;
+
+  --color-bg-primary:     #F9F9F9;
+  --color-bg-secondary:   #EFEFEF;
+  --color-border:         #C8C8C8;
+  --color-text-primary:   #282828;
+  --color-text-secondary: #545454;
+  --color-text-tertiary:  #999999;
+  --color-text-ghost:     #CCCCCC;
+  --color-accent:         #2DBA60;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #F9F9F9;
+  color: #282828;
+  font-family: 'Chakra Petch', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
